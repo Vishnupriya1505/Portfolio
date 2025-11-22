@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishnupriya S | Portfolio</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Poppins", sans-serif; background: #040407; color: #fff; line-height: 1.6; }
+    a { text-decoration: none; }
+
+    /* Navbar */
+    header { position: fixed; top: 0; left: 0; width: 100%; background: #111; padding: 15px 10%; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+    header h1 { font-size: 24px; color: #ff9800; }
+    nav a { margin-left: 20px; color: #fff; transition: 0.3s; }
+    nav a:hover { color: #ff9800; }
+
+    /* Hero Section */
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0 10%; }
+    .hero-container { display: flex; justify-content: space-between; align-items: center; gap: 50px; flex-wrap: wrap; }
+    .hero-text { flex: 1; }
+    .hero-text h3 { font-size: 22px; margin-bottom: 10px; color: #bbb; }
+    .hero-text h1 { font-size: 50px; font-weight: bold; margin-bottom: 10px; }
+    .hero-text h1 span { color: #ff9800; }
+    .hero-text h2 { font-size: 24px; margin-bottom: 15px; }
+    .hero-text h2 span { color: #6c63ff; font-weight: bold; }
+    .hero-text p { font-size: 16px; margin-bottom: 20px; max-width: 500px; }
+    .social-links a { margin: 0 8px; font-size: 20px; color: #fff; transition: 0.3s; }
+    .social-links a:hover { color: #ff9800; }
+    .btn { display: inline-block; padding: 10px 20px; background: #ff9800; color: #000; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+    .btn:hover { background: #e68900; }
+    .hero-img { flex: 1; display: flex; justify-content: center; }
+    .hero-img img { width: 300px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.6); }
+
+    /* Section styling */
+    section { padding: 80px 10%; }
+    section h2 { text-align: center; font-size: 32px; margin-bottom: 40px; color: #ff9800; }
+
+    /* About Section */
+    .about-section { background:#2c2f33; color:#fff; padding:80px 10%; }
+    .about-container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:40px; }
+    .about-left { flex:1; min-width:280px; }
+    .about-left h2 { font-size:36px; margin-bottom:20px; }
+    .about-left h2 span { color:#6c63ff; }
+    .about-left h3 { font-size:24px; margin-bottom:15px; }
+    .about-left p { font-size:16px; line-height:1.8; }
+    .about-right { flex:1; min-width:280px; text-align:center; }
+    .about-right h3 { font-size:20px; margin-bottom:20px; }
+    .logo-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+    .logo-grid img { width:60px; }
+
+    /* Skills */
+    .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .skill { background: #111; padding: 20px; border-radius: 8px; text-align: center; transition: 0.3s; }
+    .skill:hover { transform: translateY(-5px); }
+    .skill h3 { margin: 15px 0 10px; color: #6c63ff; font-size: 20px; }
+    .skill p { font-size: 14px; color: #ccc; line-height: 1.6; }
+
+    /* Projects */
+    .projects-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .project { background: #111; padding: 20px; border-radius: 8px; transition: 0.3s; }
+    .project:hover { transform: translateY(-5px); }
+    .project h3 { margin-bottom: 10px; color: #6c63ff; }
+
+    /* Contact */
+    .contact p { text-align: center; font-size: 18px; margin-bottom: 10px; }
+    .contact a { color: #ff9800; }
+
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #111; font-size: 14px; margin-top: 20px; }
+    footer span { color: #ff9800; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Vishnupriya</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h3>Hello, I'm</h3>
+        <h1><span>Vishnupriya S</span></h1>
+        <h2>And I'm an <span class="typing"></span></h2>
+        <p>
+          Driven and forward-thinking Artificial Intelligence and Data Science student with experience 
+          in Data Visualization, Power BI and web technologies. Passionate about transforming ideas 
+          into impactful, real-time solutions through innovation, collaboration, and data-driven thinking.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/vishnupriya15" target="_blank">🔗</a>
+          <a href="https://github.com/Vishnupriya" target="_blank">💻</a>
+          <a href="mailto:vishnupriyas1505@gmail.com">✉</a>
+        </div>
+        <a href="C:\Vishnu\727623BAD006_VISHNUPRIYA_RESUME.pdf" download class="btn">Download Resume</a>
+      </div>
+      <div class="hero-img">
+        <img src="C:\Vishnu\Portfolio\Vishnu_Professionalphoto.jpg" alt="Vishnupriya" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- Left: Text -->
+      <div class="about-left">
+        <h2>About <span>Me</span></h2>
+        <h3>Aspiring AI & Data Science Enthusiast!</h3>
+        <p>
+          I am an Artificial Intelligence and Data Science student with a passion for problem solving, 
+          data-driven decision making, and full-stack development. Skilled in Python, Java, JavaScript, HTML, CSS, 
+          Git and GitHub. Experienced in building projects involving Data Visualization, Web Applications, and APIs. 
+          Always eager to innovate, collaborate, and create impactful solutions.
+        </p>
+      </div>
+      <!-- Right: Logos -->
+      <div class="about-right">
+        <h3>I can work with</h3>
+        <div class="logo-grid">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="background:#fff; border-radius:50%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My <span style="color:#6c63ff;">Skills</span></h2>
+    <div class="skills-container">
+
+      <!-- HTML CSS JS -->
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/>
+        <h3>HTML • CSS • JavaScript</h3>
+        <p>I’m a web wizard! With HTML I build the foundation, with CSS I add beauty, and with JavaScript I bring it all alive with interactivity and magic.</p>
+      </div>
+
+      <!-- C & Java -->
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="50"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50"/>
+        <h3>C • Java</h3>
+        <p>I’m a code artist! With C I design efficient algorithms, and with Java I create apps that work everywhere, painting digital masterpieces that are both functional and elegant.</p>
+      </div>
+
+      <!-- MySQL -->
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50"/>
+        <h3>MySQL</h3>
+        <p>I’m a data maestro! I design structured databases that are clean, powerful, and reliable. With MySQL, I transform raw data into meaningful, actionable insights for any project.</p>
+      </div>
+
+      <!-- Python -->
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"/>
+        <h3>Python</h3>
+        <p>I’m a problem solver! Python is my go-to tool for AI, data analysis, and automation. Its simplicity and versatility allow me to turn complex problems into elegant solutions.</p>
+      </div>
+
+      <!-- Power BI & Excel -->
+      <div class="skill">
+        <img src="https://img.icons8.com/color/48/power-bi.png" width="50"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/msdos/msdos-original.svg" width="50"/>
+        <h3>Power BI • Excel</h3>
+        <p>I’m a data storyteller! With Power BI and Excel, I craft dashboards and visualizations that reveal hidden patterns, making data-driven decisions clear, impactful, and exciting.</p>
+      </div>
+
+      <!-- Git & GitHub -->
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50"/>
+        <h3>Git • GitHub</h3>
+        <p>I’m a collaboration enabler! With Git I manage changes seamlessly, and with GitHub I build, share, and grow projects with others, turning teamwork into innovation.</p>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My <span style="color:#6c63ff;">Projects</span></h2>
+    <div class="projects-container">
+      <!-- Hexagon Grid -->
+      <div class="hex-grid">
+        <!-- Project 1 -->
+        <div class="hex" onmouseover="showProject(1)">
+          <span>🏏</span>
+        </div>
+        <!-- Project 2 -->
+        <div class="hex" onmouseover="showProject(2)">
+          <span>💰</span>
+        </div>
+        <!-- Project 3 -->
+        <div class="hex" onmouseover="showProject(3)">
+          <span>📖</span>
+        </div>
+      </div>
+
+      <!-- Project Details -->
+      <div class="project-details" id="project-details">
+        <h3>Hover a project to see details</h3>
+        <p>Explore my works by hovering on the hexagons.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Project Details Function
+    function showProject(id) {
+      const details = document.getElementById("project-details");
+      let content = "";
+      if (id === 1) {
+        content = `
+          <h3>🏏 Cricket Scoreboard Management</h3>
+          <p>A fast and efficient match-tracking system built in <span>C</span> using core data structures. 
+          It handles live score updates, player statistics, and match summaries seamlessly.</p>
+          <p><strong>Tech Stack:</strong> C, Data Structures</p>
+        `;
+      } else if (id === 2) {
+        content = `
+          <h3>💰 Expense Tracker</h3>
+          <p>A smart personal finance tracker developed with <span>Java</span>, <span>SQL</span>, and <span>PHP</span>. 
+          It helps users log expenses, categorize spending, and visualize financial patterns effectively.</p>
+          <p><strong>Tech Stack:</strong> Java, SQL, PHP</p>
+        `;
+      } else if (id === 3) {
+        content = `
+          <h3>📖 Interactive Storytelling App</h3>
+          <p>An engaging app powered by <span>Ollama</span>, offering dynamic genre-based storytelling. 
+          Users explore branching narratives and make choices that influence the story outcome.</p>
+          <p><strong>Tech Stack:</strong> Ollama, JavaScript, HTML, CSS</p>
+        `;
+      }
+      details.innerHTML = content;
+    }
+  </script>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2><span style="color:#fff;">Contact</span> <span style="color:#6c63ff;">Me!</span></h2>
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="form-row">
+      <input type="text" name="Full Name" placeholder="Full Name" required>
+      <input type="email" name="Email" placeholder="Email Address" required>
+    </div>
+    <div class="form-row">
+      <input type="text" name="Mobile" placeholder="Mobile Number" required>
+      <input type="text" name="Subject" placeholder="Email Subject" required>
+    </div>
+    <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+    <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+</section>
+
+<style>
+/* Contact Section */
+.contact {
+  padding: 80px 10%;
+  background: #000;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2c2f33;
+  color: #fff;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #6c63ff, #8a7dff);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(108, 99, 255, 0.7);
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(108, 99, 255, 1);
+}
+</style>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2025 <span>Vishnupriya</span> | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Typing effect for role
+    const roles = ["Aspiring Data Analyst", "AI Enthusiast", "Problem Solver"];
+    let i = 0, j = 0, current = "", isDeleting = false;
+    function type() {
+      current = roles[i];
+      document.querySelector(".typing").textContent =
+        current.substring(0, j) + (j < current.length ? "|" : "");
+      if (!isDeleting && j < current.length) j++;
+      else if (isDeleting && j > 0) j--;
+      else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) i = (i + 1) % roles.length;
+      }
+      setTimeout(type, isDeleting ? 80 : 150);
+    }
+    type();
+  </script>
+</body>
+</html>
